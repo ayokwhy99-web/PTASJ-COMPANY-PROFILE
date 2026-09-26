@@ -1,0 +1,3766 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PT AMANAH SAKURA JAPAN</title>
+
+<meta name="description"
+content="PT Amanah Sakura Japan - Pendidikan, pelatihan bahasa Jepang dan rekrutmen tenaga kerja Indonesia untuk Jepang.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+    --black:#111111;
+    --dark:#181818;
+
+    --cream:#f7f3eb;
+    --cream2:#eee7da;
+
+    --white:#ffffff;
+
+    --red:#a51d2d;
+    --red-dark:#821624;
+
+    --gold:#b79555;
+    --gold-light:#d8bf8a;
+
+    --gray:#666666;
+
+    --border:rgba(17,17,17,.10);
+
+    --shadow:0 18px 50px rgba(0,0,0,.10);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"DM Sans",sans-serif;
+    color:var(--black);
+    background:var(--white);
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+body.lang-jp{
+    font-family:"Noto Serif JP","DM Sans",sans-serif;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button{
+    font-family:inherit;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+
+/* =========================================================
+   SCROLL PROGRESS
+========================================================= */
+
+.scroll-progress{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:3px;
+    background:var(--gold);
+    z-index:9999;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:76px;
+
+    display:flex;
+    align-items:center;
+
+    background:rgba(247,243,235,.94);
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid rgba(17,17,17,.08);
+
+    z-index:1000;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.logo-circle{
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    border:2px solid var(--gold);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:var(--white);
+}
+
+.logo-circle img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.logo-text{
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.08em;
+}
+
+.logo-text span{
+    display:block;
+    color:var(--gold);
+    font-size:10px;
+    letter-spacing:.18em;
+    margin-top:1px;
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav-menu a{
+    font-size:13px;
+    font-weight:600;
+    position:relative;
+    padding:5px 0;
+}
+
+.nav-menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+
+    width:0;
+    height:1px;
+
+    background:var(--red);
+
+    transition:.3s;
+}
+
+.nav-menu a:hover::after{
+    width:100%;
+}
+
+.language-switch{
+    display:flex;
+    align-items:center;
+    gap:4px;
+
+    border:1px solid rgba(17,17,17,.12);
+    border-radius:30px;
+
+    padding:4px;
+}
+
+.lang-btn{
+    border:0;
+    background:transparent;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    font-size:11px;
+    font-weight:700;
+
+    color:var(--gray);
+
+    transition:.3s;
+}
+
+.lang-btn.active{
+    background:var(--black);
+    color:var(--white);
+}
+
+.mobile-toggle{
+    display:none;
+
+    border:0;
+    background:transparent;
+
+    font-size:25px;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:100vh;
+    padding:150px 0 90px;
+
+    position:relative;
+
+    background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(183,149,85,.18),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(165,29,45,.06),
+            transparent 30%
+        ),
+        var(--cream);
+
+    display:flex;
+    align-items:center;
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    top:100px;
+    right:-120px;
+
+    width:380px;
+    height:380px;
+
+    border:1px solid rgba(183,149,85,.18);
+
+    border-radius:50%;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:70px;
+    align-items:center;
+}
+
+.hero-small{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:var(--red);
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+}
+
+.hero-small::before{
+    content:"";
+    width:38px;
+    height:1px;
+    background:var(--gold);
+}
+
+.hero h1{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(48px,7vw,88px);
+
+    line-height:1.02;
+
+    letter-spacing:-.04em;
+
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:var(--red);
+}
+
+.hero-description{
+    max-width:620px;
+
+    color:var(--gray);
+
+    font-size:16px;
+
+    margin-bottom:32px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:48px;
+
+    padding:0 22px;
+
+    border:1px solid var(--black);
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:.05em;
+
+    transition:.3s;
+}
+
+.btn-dark{
+    background:var(--black);
+    color:var(--white);
+}
+
+.btn-dark:hover{
+    background:var(--red);
+    border-color:var(--red);
+}
+
+.btn-outline:hover{
+    background:var(--black);
+    color:var(--white);
+}
+
+
+/* HERO CARD */
+
+.hero-card{
+    position:relative;
+
+    background:var(--black);
+
+    min-height:480px;
+
+    padding:55px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+}
+
+.hero-card::before{
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    right:-70px;
+    top:-70px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(216,191,138,.25);
+}
+
+.hero-card::after{
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    left:-190px;
+    bottom:-190px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(216,191,138,.16);
+}
+
+.hero-card-top{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.hero-card-label{
+    color:var(--gold-light);
+
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+.hero-japan{
+    font-family:"Noto Serif JP",serif;
+
+    color:var(--gold-light);
+
+    font-size:75px;
+
+    line-height:1;
+}
+
+.hero-card-title{
+    position:relative;
+    z-index:2;
+
+    color:var(--white);
+
+    font-family:"Playfair Display",serif;
+
+    font-size:36px;
+
+    line-height:1.2;
+
+    max-width:390px;
+}
+
+.hero-card-title span{
+    color:var(--gold-light);
+}
+
+.hero-card-bottom{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    gap:20px;
+}
+
+.hero-card-line{
+    width:70px;
+    height:2px;
+    background:var(--gold);
+}
+
+.hero-card-small{
+    color:#aaa;
+    font-size:11px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+section{
+    padding:110px 0;
+}
+
+.section-heading{
+    margin-bottom:55px;
+}
+
+.section-kicker{
+    color:var(--red);
+
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:.18em;
+    text-transform:uppercase;
+
+    margin-bottom:13px;
+}
+
+.section-title{
+    font-family:"Playfair Display",serif;
+
+    font-size:clamp(36px,5vw,58px);
+
+    line-height:1.1;
+}
+
+.section-description{
+    max-width:650px;
+
+    color:var(--gray);
+
+    margin-top:18px;
+}
+
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile{
+    background:var(--white);
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:80px;
+    align-items:start;
+}
+
+.profile-mark{
+    position:relative;
+
+    min-height:390px;
+
+    background:var(--cream);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.profile-mark::before{
+    content:"";
+
+    width:270px;
+    height:270px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(183,149,85,.45);
+
+    position:absolute;
+}
+
+.profile-mark::after{
+    content:"桜";
+
+    position:absolute;
+
+    font-family:"Noto Serif JP",serif;
+
+    font-size:120px;
+
+    color:rgba(183,149,85,.20);
+}
+
+.profile-mark-text{
+    position:relative;
+    z-index:2;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:30px;
+
+    text-align:center;
+}
+
+.profile-content h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+}
+
+.profile-content p{
+    color:var(--gray);
+
+    margin-bottom:18px;
+}
+
+.profile-list{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin-top:28px;
+}
+
+.profile-item{
+    padding:17px;
+
+    border:1px solid var(--border);
+
+    background:#fff;
+}
+
+.profile-item strong{
+    display:block;
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    margin-bottom:4px;
+}
+
+.profile-item span{
+    font-size:13px;
+
+    color:var(--gray);
+}
+
+
+/* =========================================================
+   TEAM
+========================================================= */
+
+.team{
+    background:var(--cream);
+}
+
+.team-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.team-card{
+    background:var(--white);
+
+    border:1px solid rgba(17,17,17,.08);
+
+    padding:30px;
+
+    transition:.35s;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.04);
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow);
+}
+
+.team-photo{
+    width:160px;
+    height:160px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    border:3px solid var(--gold);
+
+    padding:6px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+}
+
+.team-photo img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+}
+
+.team-info{
+    text-align:center;
+}
+
+.team-number{
+    color:var(--gold);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:.15em;
+
+    margin-bottom:7px;
+}
+
+.team-name{
+    font-family:"Playfair Display",serif;
+
+    font-size:25px;
+
+    line-height:1.25;
+
+    margin-bottom:10px;
+}
+
+.team-role{
+    color:var(--gray);
+
+    font-size:12px;
+
+    line-height:1.7;
+}
+
+.role-en{
+    font-size:11px;
+    color:#777;
+}
+
+
+/* =========================================================
+   VISION
+========================================================= */
+
+.vision{
+    background:var(--black);
+
+    color:var(--white);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.vision::before{
+    content:"";
+
+    position:absolute;
+
+    right:-150px;
+    top:-150px;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(216,191,138,.17);
+}
+
+.vision-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.vision .section-kicker{
+    color:var(--gold-light);
+}
+
+.vision .section-title{
+    color:var(--white);
+}
+
+.vision-text{
+    color:#b9b9b9;
+
+    margin-top:20px;
+
+    max-width:600px;
+}
+
+.vision-box{
+    position:relative;
+
+    min-height:330px;
+
+    border:1px solid rgba(216,191,138,.25);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.vision-box::before{
+    content:"";
+
+    width:230px;
+    height:230px;
+
+    border:1px solid rgba(216,191,138,.25);
+
+    border-radius:50%;
+
+    position:absolute;
+}
+
+.vision-kanji{
+    position:relative;
+    z-index:2;
+
+    font-family:"Noto Serif JP",serif;
+
+    font-size:120px;
+
+    color:var(--gold-light);
+}
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.values{
+    background:var(--cream);
+}
+
+.values-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+}
+
+.value-card{
+    padding:32px 25px;
+
+    background:var(--white);
+
+    border-top:2px solid var(--gold);
+
+    min-height:210px;
+
+    transition:.3s;
+}
+
+.value-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow);
+}
+
+.value-number{
+    color:var(--gold);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:.1em;
+
+    margin-bottom:30px;
+}
+
+.value-card h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:22px;
+
+    margin-bottom:10px;
+}
+
+.value-card p{
+    color:var(--gray);
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services{
+    background:var(--white);
+}
+
+.services-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.service-card{
+    border:1px solid var(--border);
+
+    padding:40px 32px;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.service-card::after{
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+    height:100px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(183,149,85,.18);
+
+    right:-45px;
+    bottom:-45px;
+}
+
+.service-card:hover{
+    border-color:var(--gold);
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow);
+}
+
+.service-number{
+    font-family:"Playfair Display",serif;
+
+    font-size:38px;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+}
+
+.service-card h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:25px;
+
+    margin-bottom:14px;
+}
+
+.service-card p{
+    color:var(--gray);
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process{
+    background:var(--cream2);
+}
+
+.process-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:0;
+}
+
+.process-step{
+    padding:35px 28px;
+
+    border-top:1px solid rgba(17,17,17,.18);
+
+    position:relative;
+}
+
+.process-step:not(:last-child)::after{
+    content:"";
+
+    position:absolute;
+
+    right:0;
+    top:34px;
+
+    width:1px;
+    height:100px;
+
+    background:rgba(17,17,17,.12);
+}
+
+.process-number{
+    font-family:"Playfair Display",serif;
+
+    font-size:42px;
+
+    color:var(--gold);
+
+    margin-bottom:18px;
+}
+
+.process-step h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:21px;
+
+    margin-bottom:10px;
+}
+
+.process-step p{
+    color:var(--gray);
+
+    font-size:12px;
+}
+
+
+/* =========================================================
+   PRINCIPLE
+========================================================= */
+
+.principle{
+    background:var(--black);
+
+    color:var(--white);
+}
+
+.principle-box{
+    border:1px solid rgba(216,191,138,.25);
+
+    padding:75px 60px;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.principle-box::before{
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:400px;
+    height:400px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(216,191,138,.08);
+}
+
+.principle-kanji{
+    position:relative;
+    z-index:2;
+
+    font-family:"Noto Serif JP",serif;
+
+    color:var(--gold-light);
+
+    font-size:85px;
+
+    margin-bottom:20px;
+}
+
+.principle-box h2{
+    position:relative;
+    z-index:2;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:36px;
+
+    margin-bottom:15px;
+}
+
+.principle-box p{
+    position:relative;
+    z-index:2;
+
+    color:#aaa;
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact{
+    background:var(--cream);
+}
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
+}
+
+.contact-info{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-top:30px;
+}
+
+.contact-item{
+    display:flex;
+
+    gap:18px;
+
+    padding:20px;
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+}
+
+.contact-icon{
+    width:42px;
+    height:42px;
+
+    flex:none;
+
+    border-radius:50%;
+
+    background:var(--black);
+
+    color:var(--gold-light);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:14px;
+}
+
+.contact-item strong{
+    display:block;
+
+    font-size:12px;
+
+    margin-bottom:3px;
+}
+
+.contact-item span{
+    color:var(--gray);
+
+    font-size:13px;
+
+    word-break:break-word;
+}
+
+.contact-card{
+    background:var(--black);
+
+    color:var(--white);
+
+    padding:45px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.contact-card::before{
+    content:"桜";
+
+    position:absolute;
+
+    right:15px;
+    bottom:-25px;
+
+    font-family:"Noto Serif JP",serif;
+
+    font-size:150px;
+
+    color:rgba(216,191,138,.08);
+}
+
+.contact-card h3{
+    position:relative;
+    z-index:2;
+
+    font-family:"Playfair Display",serif;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    position:relative;
+    z-index:2;
+
+    color:#aaa;
+
+    font-size:13px;
+
+    margin-bottom:28px;
+}
+
+.contact-card .btn{
+    position:relative;
+    z-index:2;
+
+    background:var(--gold);
+
+    border-color:var(--gold);
+
+    color:var(--black);
+}
+
+.contact-card .btn:hover{
+    background:var(--gold-light);
+
+    border-color:var(--gold-light);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:var(--black);
+
+    color:var(--white);
+
+    padding:55px 0 25px;
+}
+
+.footer-top{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    padding-bottom:40px;
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.footer-brand{
+    max-width:400px;
+}
+
+.footer-brand h3{
+    font-family:"Playfair Display",serif;
+
+    font-size:25px;
+
+    margin-bottom:12px;
+}
+
+.footer-brand p{
+    color:#999;
+
+    font-size:12px;
+}
+
+.footer-links{
+    display:flex;
+
+    gap:55px;
+}
+
+.footer-links div{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+}
+
+.footer-links strong{
+    color:var(--gold-light);
+
+    font-size:11px;
+
+    letter-spacing:.12em;
+
+    margin-bottom:8px;
+}
+
+.footer-links a{
+    color:#aaa;
+
+    font-size:12px;
+
+    transition:.2s;
+}
+
+.footer-links a:hover{
+    color:var(--white);
+}
+
+.footer-bottom{
+    padding-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    color:#777;
+
+    font-size:10px;
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-top{
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    width:45px;
+    height:45px;
+
+    border:1px solid var(--gold);
+
+    background:var(--black);
+
+    color:var(--gold-light);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(10px);
+
+    transition:.3s;
+
+    z-index:999;
+}
+
+.back-top.show{
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+}
+
+.back-top:hover{
+    background:var(--gold);
+
+    color:var(--black);
+}
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal{
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.reveal.visible{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* =========================================================
+   JAPANESE
+========================================================= */
+
+body.lang-jp .hero h1,
+body.lang-jp .section-title,
+body.lang-jp .team-name,
+body.lang-jp .service-card h3,
+body.lang-jp .value-card h3,
+body.lang-jp .process-step h3,
+body.lang-jp .contact-card h3{
+    font-family:"Noto Serif JP",serif;
+}
+
+
+/* =========================================================
+   RESPONSIVE 1050
+========================================================= */
+
+@media(max-width:1050px){
+
+    .nav-menu{
+        gap:18px;
+    }
+
+    .hero-grid{
+        gap:40px;
+    }
+
+    .hero-card{
+        min-height:430px;
+
+        padding:40px;
+    }
+
+    .profile-grid,
+    .vision-grid,
+    .contact-grid{
+        gap:45px;
+    }
+
+    .values-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .team-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE 700
+========================================================= */
+
+@media(max-width:700px){
+
+    header{
+        height:68px;
+    }
+
+    .nav-menu{
+        position:absolute;
+
+        top:68px;
+        left:0;
+
+        width:100%;
+
+        background:rgba(247,243,235,.98);
+
+        border-bottom:1px solid var(--border);
+
+        padding:20px;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:14px;
+    }
+
+    .nav-menu.open{
+        display:flex;
+    }
+
+    .mobile-toggle{
+        display:block;
+    }
+
+    .language-switch{
+        margin-left:auto;
+    }
+
+    .hero{
+        padding-top:125px;
+
+        padding-bottom:70px;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+
+        gap:40px;
+    }
+
+    .hero-card{
+        min-height:390px;
+    }
+
+    section{
+        padding:80px 0;
+    }
+
+    .profile-grid,
+    .vision-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+
+        max-width:450px;
+
+        margin:auto;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+
+        max-width:500px;
+
+        margin:auto;
+    }
+
+    .values-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process-step:nth-child(2)::after{
+        display:none;
+    }
+
+    .footer-top{
+        flex-direction:column;
+    }
+
+    .footer-links{
+        flex-wrap:wrap;
+
+        gap:30px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE 430
+========================================================= */
+
+@media(max-width:430px){
+
+    .container{
+        width:90%;
+    }
+
+    .logo-text{
+        font-size:12px;
+    }
+
+    .logo-text span{
+        font-size:8px;
+    }
+
+    .logo-circle{
+        width:42px;
+        height:42px;
+    }
+
+    .language-switch{
+        padding:2px;
+    }
+
+    .lang-btn{
+        padding:5px 7px;
+
+        font-size:9px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero-card{
+        padding:30px;
+
+        min-height:350px;
+    }
+
+    .hero-japan{
+        font-size:55px;
+    }
+
+    .hero-card-title{
+        font-size:28px;
+    }
+
+    .profile-list{
+        grid-template-columns:1fr;
+    }
+
+    .values-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-step:not(:last-child)::after{
+        display:none;
+    }
+
+    .principle-box{
+        padding:55px 25px;
+    }
+
+    .principle-kanji{
+        font-size:70px;
+    }
+
+    .principle-box h2{
+        font-size:28px;
+    }
+
+    .contact-card{
+        padding:30px;
+    }
+
+    .footer-links{
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        transition:none !important;
+        animation:none !important;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     SCROLL PROGRESS
+===================================================== -->
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<div class="container nav">
+
+    <a href="#home" class="logo-area">
+
+        <div class="logo-circle">
+
+            <img
+                src="logo-amanah-sakura.png"
+                alt="PT Amanah Sakura Japan"
+                onerror="this.style.display='none'"
+            >
+
+        </div>
+
+        <div class="logo-text">
+
+            AMANAH SAKURA JAPAN
+
+            <span>PT AMANAH SAKURA JAPAN</span>
+
+        </div>
+
+    </a>
+
+
+    <nav class="nav-menu" id="navMenu">
+
+        <a href="#home" data-i18n="nav_home">
+            Home
+        </a>
+
+        <a href="#profile" data-i18n="nav_profile">
+            Profile
+        </a>
+
+        <a href="#team" data-i18n="nav_team">
+            Team
+        </a>
+
+        <a href="#services" data-i18n="nav_services">
+            Services
+        </a>
+
+        <a href="#process" data-i18n="nav_process">
+            Process
+        </a>
+
+        <a href="#contact" data-i18n="nav_contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="language-switch">
+
+        <button
+            class="lang-btn active"
+            data-lang="id">
+            ID
+        </button>
+
+        <button
+            class="lang-btn"
+            data-lang="jp">
+            JP
+        </button>
+
+        <button
+            class="lang-btn"
+            data-lang="en">
+            EN
+        </button>
+
+    </div>
+
+
+    <button
+        class="mobile-toggle"
+        id="mobileToggle"
+        aria-label="Menu">
+        ☰
+    </button>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+    <div class="hero-content reveal">
+
+        <div class="hero-small" data-i18n="hero_kicker">
+            Japan Human Resource Partner
+        </div>
+
+        <h1>
+            Amanah
+            <span>Sakura</span>
+            Japan
+        </h1>
+
+        <p
+            class="hero-description"
+            data-i18n="hero_description">
+            Membangun jembatan antara Indonesia dan Jepang melalui pendidikan, pelatihan, dan pengembangan sumber daya manusia yang profesional.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#profile"
+                class="btn btn-dark"
+                data-i18n="hero_button">
+                Tentang Kami
+            </a>
+
+            <a
+                href="#contact"
+                class="btn btn-outline"
+                data-i18n="hero_contact">
+                Hubungi Kami
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card reveal">
+
+        <div class="hero-card-top">
+
+            <div
+                class="hero-card-label"
+                data-i18n="hero_card_label">
+                Trusted Human Resources
+            </div>
+
+            <div class="hero-japan">
+                桜
+            </div>
+
+        </div>
+
+
+        <div
+            class="hero-card-title"
+            data-i18n="hero_card_title">
+            Connecting
+            <span>Indonesia</span>
+            to Japan
+        </div>
+
+
+        <div class="hero-card-bottom">
+
+            <div class="hero-card-line"></div>
+
+            <div
+                class="hero-card-small"
+                data-i18n="hero_card_small">
+                Education • Training • Recruitment
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROFILE
+===================================================== -->
+
+<section class="profile" id="profile">
+
+<div class="container">
+
+    <div class="section-heading reveal">
+
+        <div
+            class="section-kicker"
+            data-i18n="profile_kicker">
+            Company Profile
+        </div>
+
+        <h2
+            class="section-title"
+            data-i18n="profile_title">
+            Tentang Amanah Sakura
+        </h2>
+
+        <p
+            class="section-description"
+            data-i18n="profile_description">
+            PT Amanah Sakura Japan hadir sebagai mitra dalam pengembangan sumber daya manusia Indonesia menuju Jepang.
+        </p>
+
+    </div>
+
+
+    <div class="profile-grid">
+
+        <div class="profile-mark reveal">
+
+            <div class="profile-mark-text">
+                AMANAH<br>
+                SAKURA
+            </div>
+
+        </div>
+
+
+        <div class="profile-content reveal">
+
+            <h3 data-i18n="profile_heading">
+                Membuka Jalan Menuju Masa Depan
+            </h3>
+
+            <p data-i18n="profile_p1">
+                PT Amanah Sakura Japan berfokus pada pendidikan bahasa Jepang, pelatihan, pendampingan, serta rekrutmen sumber daya manusia Indonesia untuk bekerja dan berkembang di Jepang.
+            </p>
+
+            <p data-i18n="profile_p2">
+                Kami mengutamakan proses yang transparan, komunikasi yang baik, serta pendampingan yang bertanggung jawab dari tahap persiapan hingga keberangkatan.
+            </p>
+
+
+            <div class="profile-list">
+
+                <div class="profile-item">
+
+                    <strong data-i18n="profile_item1_title">
+                        Focus
+                    </strong>
+
+                    <span data-i18n="profile_item1">
+                        Pendidikan & Pelatihan Jepang
+                    </span>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <strong data-i18n="profile_item2_title">
+                        Recruitment
+                    </strong>
+
+                    <span data-i18n="profile_item2">
+                        Tokutei Ginou & Magang
+                    </span>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <strong data-i18n="profile_item3_title">
+                        Support
+                    </strong>
+
+                    <span data-i18n="profile_item3">
+                        Pendampingan Kandidat
+                    </span>
+
+                </div>
+
+
+                <div class="profile-item">
+
+                    <strong data-i18n="profile_item4_title">
+                        Japan
+                    </strong>
+
+                    <span data-i18n="profile_item4">
+                        Connecting with Japanese Companies
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     TEAM
+===================================================== -->
+
+<section class="team" id="team">
+
+<div class="container">
+
+    <div class="section-heading reveal">
+
+        <div
+            class="section-kicker"
+            data-i18n="team_kicker">
+            Management Team
+        </div>
+
+        <h2
+            class="section-title"
+            data-i18n="team_title">
+            Tim Amanah Sakura
+        </h2>
+
+        <p
+            class="section-description"
+            data-i18n="team_description">
+            Tim profesional yang berkomitmen dalam pendidikan, penerjemahan, serta pengembangan dan rekrutmen sumber daya manusia Indonesia untuk Jepang.
+        </p>
+
+    </div>
+
+
+    <div class="team-grid">
+
+
+        <!-- KOIRUL -->
+
+        <div class="team-card reveal">
+
+            <div class="team-photo">
+
+                <img
+                    src="koirul.jpg"
+                    alt="Koirul Mustakim"
+                    loading="lazy"
+                    onerror="this.style.visibility='hidden'"
+                >
+
+            </div>
+
+
+            <div class="team-info">
+
+                <div class="team-number">
+                    01
+                </div>
+
+                <div class="team-name">
+                    Koirul Mustakim
+                </div>
+
+                <div
+                    class="team-role"
+                    data-i18n="koirul_role">
+                    Direktur Utama / CEO PT Amanah Sakura Japan
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- AYOK -->
+
+        <div class="team-card reveal">
+
+            <div class="team-photo">
+
+                <img
+                    src="ayok.jpg"
+                    alt="Ayok Wahyu Saputro"
+                    loading="lazy"
+                    onerror="this.style.visibility='hidden'"
+                >
+
+            </div>
+
+
+            <div class="team-info">
+
+                <div class="team-number">
+                    02
+                </div>
+
+                <div class="team-name">
+                    Ayok Wahyu Saputro
+                </div>
+
+                <div
+                    class="team-role"
+                    data-i18n="ayok_role">
+                    Manajer & Leader Rekrutmen SDM Tokutei Ginou Indonesia
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HADI -->
+
+        <div class="team-card reveal">
+
+            <div class="team-photo">
+
+                <img
+                    src="hadi.jpg"
+                    alt="Hadi Prasojo"
+                    loading="lazy"
+                    onerror="this.style.visibility='hidden'"
+                >
+
+            </div>
+
+
+            <div class="team-info">
+
+                <div class="team-number">
+                    03
+                </div>
+
+                <div class="team-name">
+                    Hadi Prasojo
+                </div>
+
+                <div
+                    class="team-role"
+                    data-i18n="hadi_role">
+                    Penerjemah Bahasa Jepang (JLPT N1)
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     VISION
+===================================================== -->
+
+<section class="vision">
+
+<div class="container vision-grid">
+
+    <div class="reveal">
+
+        <div
+            class="section-kicker"
+            data-i18n="vision_kicker">
+            Vision & Mission
+        </div>
+
+        <h2
+            class="section-title"
+            data-i18n="vision_title">
+            Menjadi Jembatan yang Dipercaya
+        </h2>
+
+        <p
+            class="vision-text"
+            data-i18n="vision_text">
+            Kami ingin menjadi partner terpercaya bagi kandidat Indonesia dan perusahaan Jepang melalui pendidikan yang berkualitas, proses yang transparan, dan hubungan jangka panjang.
+        </p>
+
+    </div>
+
+
+    <div class="vision-box reveal">
+
+        <div class="vision-kanji">
+            信頼
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     VALUES
+===================================================== -->
+
+<section class="values">
+
+<div class="container">
+
+    <div class="section-heading reveal">
+
+        <div
+            class="section-kicker"
+            data-i18n="values_kicker">
+            Our Values
+        </div>
+
+        <h2
+            class="section-title"
+            data-i18n="values_title">
+            Nilai yang Kami Pegang
+        </h2>
+
+    </div>
+
+
+    <div class="values-grid">
+
+
+        <div class="value-card reveal">
+
+            <div class="value-number">
+                01
+            </div>
+
+            <h3 data-i18n="value1_title">
+                Amanah
+            </h3>
+
+            <p data-i18n="value1_text">
+                Menjaga kepercayaan melalui proses yang jujur dan bertanggung jawab.
+            </p>
+
+        </div>
+
+
+        <div class="value-card reveal">
+
+            <div class="value-number">
+                02
+            </div>
+
+            <h3 data-i18n="value2_title">
+                Profesional
+            </h3>
+
+            <p data-i18n="value2_text">
+                Memberikan pelayanan dengan standar profesional dan komunikasi yang jelas.
+            </p>
+
+        </div>
+
+
+        <div class="value-card reveal">
+
+            <div class="value-number">
+                03
+            </div>
+
+            <h3 data-i18n="value3_title">
+                Integritas
+            </h3>
+
+            <p data-i18n="value3_text">
+                Mengutamakan kejujuran, keterbukaan, dan tanggung jawab dalam setiap proses.
+            </p>
+
+        </div>
+
+
+        <div class="value-card reveal">
+
+            <div class="value-number">
+                04
+            </div>
+
+            <h3 data-i18n="value4_title">
+                Partnership
+            </h3>
+
+            <p data-i18n="value4_text">
+                Membangun hubungan jangka panjang dengan kandidat dan perusahaan Jepang.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+    <div class="section-heading reveal">
+
+        <div
+            class="section-kicker"
+            data-i18n="services_kicker">
+            What We Do
+        </div>
+
+        <h2
+            class="section-title"
+            data-i18n="services_title">
+            Layanan Kami
+        </h2>
+
+        <p
+            class="section-description"
+            data-i18n="services_description">
+            Solusi terpadu untuk mempersiapkan sumber daya manusia Indonesia menuju dunia kerja Jepang.
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <div class="service-card reveal">
+
+            <div class="service-number">
+                01
+            </div>
+
+            <h3 data-i18n="service1_title">
+                Pendidikan Bahasa Jepang
+            </h3>
+
+            <p data-i18n="service1_text">
+                Pembelajaran bahasa Jepang untuk mempersiapkan kandidat menghadapi kebutuhan komunikasi dan ujian bahasa Jepang.
+            </p>
+
+        </div>
+
+
+        <div class="service-card reveal">
+
+            <div class="service-number">
+                02
+            </div>
+
+            <h3 data-i18n="service2_title">
+                Rekrutmen Tokutei Ginou
+            </h3>
+
+            <p data-i18n="service2_text">
+                Seleksi dan pendampingan kandidat Indonesia untuk peluang kerja Tokutei Ginou di Jepang.
+            </p>
+
+        </div>
+
+
+        <div class="service-card reveal">
+
+            <div class="service-number">
+                03
+            </div>
+
+            <h3 data-i18n="service3_title">
+                Program Magang
+            </h3>
+
+            <p data-i18n="service3_text">
+                Persiapan kandidat untuk program kerja dan pelatihan di Jepang melalui proses yang terstruktur.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="process" id="process">
+
+<div class="container">
+
+    <div class="section-heading reveal">
+
+        <div
+            class="section-kicker"
+            data-i18n="process_kicker">
+            Our Process
+        </div>
+
+        <h2
+            class="section-title"
+            data-i18n="process_title">
+            Dari Persiapan Hingga Jepang
+        </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                01
+            </div>
+
+            <h3 data-i18n="process1_title">
+                Education
+            </h3>
+
+            <p data-i18n="process1_text">
+                Kandidat mengikuti pendidikan dan pelatihan bahasa Jepang sesuai kebutuhan program.
+            </p>
+
+        </div>
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                02
+            </div>
+
+            <h3 data-i18n="process2_title">
+                Selection
+            </h3>
+
+            <p data-i18n="process2_text">
+                Kandidat mengikuti seleksi administrasi, kemampuan bahasa, dan proses rekrutmen.
+            </p>
+
+        </div>
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                03
+            </div>
+
+            <h3 data-i18n="process3_title">
+                Preparation
+            </h3>
+
+            <p data-i18n="process3_text">
+                Kandidat mendapatkan pembekalan serta persiapan dokumen sebelum keberangkatan.
+            </p>
+
+        </div>
+
+
+        <div class="process-step reveal">
+
+            <div class="process-number">
+                04
+            </div>
+
+            <h3 data-i18n="process4_title">
+                Japan
+            </h3>
+
+            <p data-i18n="process4_text">
+                Kandidat berangkat dan memulai perjalanan profesional di Jepang.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PRINCIPLE
+===================================================== -->
+
+<section class="principle">
+
+<div class="container">
+
+    <div class="principle-box reveal">
+
+        <div class="principle-kanji">
+            信頼
+        </div>
+
+        <h2 data-i18n="principle_title">
+            Trust Creates the Future
+        </h2>
+
+        <p data-i18n="principle_text">
+            Kepercayaan adalah dasar dari setiap hubungan yang kami bangun bersama kandidat, keluarga, partner, dan perusahaan Jepang.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-grid">
+
+
+    <div class="reveal">
+
+        <div
+            class="section-kicker"
+            data-i18n="contact_kicker">
+            Contact
+        </div>
+
+        <h2
+            class="section-title"
+            data-i18n="contact_title">
+            Mari Terhubung
+        </h2>
+
+        <p
+            class="section-description"
+            data-i18n="contact_description">
+            Silakan hubungi kami untuk informasi kerja Jepang, pendidikan bahasa Jepang, kerja sama perusahaan, dan kebutuhan rekrutmen.
+        </p>
+
+
+        <div class="contact-info">
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                <div>
+
+                    <strong>
+                        Email
+                    </strong>
+
+                    <span>
+                        info@amanahsakurajapan.com
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <div>
+
+                    <strong>
+                        WhatsApp
+                    </strong>
+
+                    <span>
+                        +62 878-8950-2004
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    JP
+                </div>
+
+                <div>
+
+                    <strong data-i18n="contact_item3_title">
+                        Indonesia — Japan
+                    </strong>
+
+                    <span data-i18n="contact_item3">
+                        Human Resource & Education Partnership
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-card reveal">
+
+        <h3 data-i18n="contact_card_title">
+            Let's Build the Future Together
+        </h3>
+
+        <p data-i18n="contact_card_text">
+            Kami terbuka untuk kerja sama dengan perusahaan Jepang, lembaga pendidikan, LPK, P3MI, dan partner terkait pengembangan sumber daya manusia Indonesia.
+        </p>
+
+        <a
+            class="btn"
+            href="https://wa.me/6287889502004"
+            target="_blank"
+            rel="noopener"
+            data-i18n="contact_button">
+            Hubungi via WhatsApp
+        </a>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+    <div class="footer-top">
+
+
+        <div class="footer-brand">
+
+            <h3>
+                PT AMANAH SAKURA JAPAN
+            </h3>
+
+            <p data-i18n="footer_description">
+                Pendidikan, pelatihan, dan pengembangan sumber daya manusia Indonesia menuju Jepang.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+
+            <div>
+
+                <strong data-i18n="footer_navigation">
+                    NAVIGATION
+                </strong>
+
+                <a href="#home" data-i18n="nav_home">
+                    Home
+                </a>
+
+                <a href="#profile" data-i18n="nav_profile">
+                    Profile
+                </a>
+
+                <a href="#team" data-i18n="nav_team">
+                    Team
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <strong data-i18n="footer_company">
+                    COMPANY
+                </strong>
+
+                <a href="#services" data-i18n="nav_services">
+                    Services
+                </a>
+
+                <a href="#process" data-i18n="nav_process">
+                    Process
+                </a>
+
+                <a href="#contact" data-i18n="nav_contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 PT Amanah Sakura Japan
+        </span>
+
+        <span data-i18n="footer_right">
+            All Rights Reserved.
+        </span>
+
+    </div>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     BACK TOP
+===================================================== -->
+
+<button
+    class="back-top"
+    id="backTop"
+    aria-label="Back to top">
+    ↑
+</button>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =========================================================
+   TRANSLATION
+========================================================= */
+
+const translations = {
+
+    id: {
+
+        nav_home:"Home",
+        nav_profile:"Profile",
+        nav_team:"Team",
+        nav_services:"Services",
+        nav_process:"Process",
+        nav_contact:"Contact",
+
+        hero_kicker:"Japan Human Resource Partner",
+
+        hero_description:
+        "Membangun jembatan antara Indonesia dan Jepang melalui pendidikan, pelatihan, dan pengembangan sumber daya manusia yang profesional.",
+
+        hero_button:"Tentang Kami",
+        hero_contact:"Hubungi Kami",
+
+        hero_card_label:
+        "Trusted Human Resources",
+
+        hero_card_title:
+        "Connecting <span>Indonesia</span> to Japan",
+
+        hero_card_small:
+        "Education • Training • Recruitment",
+
+
+        profile_kicker:"Company Profile",
+
+        profile_title:
+        "Tentang Amanah Sakura",
+
+        profile_description:
+        "PT Amanah Sakura Japan hadir sebagai mitra dalam pengembangan sumber daya manusia Indonesia menuju Jepang.",
+
+        profile_heading:
+        "Membuka Jalan Menuju Masa Depan",
+
+        profile_p1:
+        "PT Amanah Sakura Japan berfokus pada pendidikan bahasa Jepang, pelatihan, pendampingan, serta rekrutmen sumber daya manusia Indonesia untuk bekerja dan berkembang di Jepang.",
+
+        profile_p2:
+        "Kami mengutamakan proses yang transparan, komunikasi yang baik, serta pendampingan yang bertanggung jawab dari tahap persiapan hingga keberangkatan.",
+
+        profile_item1_title:"Focus",
+        profile_item1:"Pendidikan & Pelatihan Jepang",
+
+        profile_item2_title:"Recruitment",
+        profile_item2:"Tokutei Ginou & Magang",
+
+        profile_item3_title:"Support",
+        profile_item3:"Pendampingan Kandidat",
+
+        profile_item4_title:"Japan",
+        profile_item4:"Connecting with Japanese Companies",
+
+
+        team_kicker:"Management Team",
+
+        team_title:
+        "Tim Amanah Sakura",
+
+        team_description:
+        "Tim profesional yang berkomitmen dalam pendidikan, penerjemahan, serta pengembangan dan rekrutmen sumber daya manusia Indonesia untuk Jepang.",
+
+        koirul_role:
+        "Direktur Utama / CEO PT Amanah Sakura Japan",
+
+        ayok_role:
+        "Manajer & Leader Rekrutmen SDM Tokutei Ginou Indonesia",
+
+        hadi_role:
+        "Penerjemah Bahasa Jepang (JLPT N1)",
+
+
+        vision_kicker:"Vision & Mission",
+
+        vision_title:
+        "Menjadi Jembatan yang Dipercaya",
+
+        vision_text:
+        "Kami ingin menjadi partner terpercaya bagi kandidat Indonesia dan perusahaan Jepang melalui pendidikan yang berkualitas, proses yang transparan, dan hubungan jangka panjang.",
+
+
+        values_kicker:"Our Values",
+
+        values_title:
+        "Nilai yang Kami Pegang",
+
+        value1_title:"Amanah",
+
+        value1_text:
+        "Menjaga kepercayaan melalui proses yang jujur dan bertanggung jawab.",
+
+        value2_title:"Profesional",
+
+        value2_text:
+        "Memberikan pelayanan dengan standar profesional dan komunikasi yang jelas.",
+
+        value3_title:"Integritas",
+
+        value3_text:
+        "Mengutamakan kejujuran, keterbukaan, dan tanggung jawab dalam setiap proses.",
+
+        value4_title:"Partnership",
+
+        value4_text:
+        "Membangun hubungan jangka panjang dengan kandidat dan perusahaan Jepang.",
+
+
+        services_kicker:"What We Do",
+
+        services_title:
+        "Layanan Kami",
+
+        services_description:
+        "Solusi terpadu untuk mempersiapkan sumber daya manusia Indonesia menuju dunia kerja Jepang.",
+
+        service1_title:
+        "Pendidikan Bahasa Jepang",
+
+        service1_text:
+        "Pembelajaran bahasa Jepang untuk mempersiapkan kandidat menghadapi kebutuhan komunikasi dan ujian bahasa Jepang.",
+
+        service2_title:
+        "Rekrutmen Tokutei Ginou",
+
+        service2_text:
+        "Seleksi dan pendampingan kandidat Indonesia untuk peluang kerja Tokutei Ginou di Jepang.",
+
+        service3_title:
+        "Program Magang",
+
+        service3_text:
+        "Persiapan kandidat untuk program kerja dan pelatihan di Jepang melalui proses yang terstruktur.",
+
+
+        process_kicker:"Our Process",
+
+        process_title:
+        "Dari Persiapan Hingga Jepang",
+
+        process1_title:"Education",
+
+        process1_text:
+        "Kandidat mengikuti pendidikan dan pelatihan bahasa Jepang sesuai kebutuhan program.",
+
+        process2_title:"Selection",
+
+        process2_text:
+        "Kandidat mengikuti seleksi administrasi, kemampuan bahasa, dan proses rekrutmen.",
+
+        process3_title:"Preparation",
+
+        process3_text:
+        "Kandidat mendapatkan pembekalan serta persiapan dokumen sebelum keberangkatan.",
+
+        process4_title:"Japan",
+
+        process4_text:
+        "Kandidat berangkat dan memulai perjalanan profesional di Jepang.",
+
+
+        principle_title:
+        "Trust Creates the Future",
+
+        principle_text:
+        "Kepercayaan adalah dasar dari setiap hubungan yang kami bangun bersama kandidat, keluarga, partner, dan perusahaan Jepang.",
+
+
+        contact_kicker:"Contact",
+
+        contact_title:
+        "Mari Terhubung",
+
+        contact_description:
+        "Silakan hubungi kami untuk informasi kerja Jepang, pendidikan bahasa Jepang, kerja sama perusahaan, dan kebutuhan rekrutmen.",
+
+        contact_item3_title:
+        "Indonesia — Japan",
+
+        contact_item3:
+        "Human Resource & Education Partnership",
+
+        contact_card_title:
+        "Let's Build the Future Together",
+
+        contact_card_text:
+        "Kami terbuka untuk kerja sama dengan perusahaan Jepang, lembaga pendidikan, LPK, P3MI, dan partner terkait pengembangan sumber daya manusia Indonesia.",
+
+        contact_button:
+        "Hubungi via WhatsApp",
+
+
+        footer_description:
+        "Pendidikan, pelatihan, dan pengembangan sumber daya manusia Indonesia menuju Jepang.",
+
+        footer_navigation:
+        "NAVIGATION",
+
+        footer_company:
+        "COMPANY",
+
+        footer_right:
+        "All Rights Reserved."
+
+    },
+
+
+    jp: {
+
+        nav_home:"ホーム",
+        nav_profile:"会社概要",
+        nav_team:"チーム",
+        nav_services:"サービス",
+        nav_process:"プロセス",
+        nav_contact:"お問い合わせ",
+
+        hero_kicker:"日本人材パートナー",
+
+        hero_description:
+        "教育・研修・人材育成を通じて、インドネシアと日本をつなぐ架け橋を築きます。",
+
+        hero_button:"私たちについて",
+        hero_contact:"お問い合わせ",
+
+        hero_card_label:
+        "信頼できる人材パートナー",
+
+        hero_card_title:
+        "インドネシアと<span>日本</span>をつなぐ",
+
+        hero_card_small:
+        "教育 • 研修 • 人材採用",
+
+
+        profile_kicker:"会社概要",
+
+        profile_title:
+        "アマナーさくらについて",
+
+        profile_description:
+        "PT Amanah Sakura Japanは、インドネシア人材の日本での成長とキャリアを支援するパートナーです。",
+
+        profile_heading:
+        "未来への道をつくる",
+
+        profile_p1:
+        "PT Amanah Sakura Japanは、日本語教育、研修、候補者サポート、日本で働くインドネシア人材の採用支援を行っています。",
+
+        profile_p2:
+        "準備から渡航まで、透明性のあるプロセスと丁寧なコミュニケーションを大切にしています。",
+
+        profile_item1_title:"Focus",
+        profile_item1:"日本語教育・研修",
+
+        profile_item2_title:"Recruitment",
+        profile_item2:"特定技能・技能実習",
+
+        profile_item3_title:"Support",
+        profile_item3:"候補者サポート",
+
+        profile_item4_title:"Japan",
+        profile_item4:"日本企業との人材パートナーシップ",
+
+
+        team_kicker:"経営・スタッフ",
+
+        team_title:
+        "アマナーさくらチーム",
+
+        team_description:
+        "教育、日本語通訳・翻訳、そしてインドネシア人材の採用・育成を担当する専門チームです。",
+
+        koirul_role:
+        'PT Amanah Sakura Japan 代表取締役<br><span class="role-en">Chief Executive Officer (CEO), PT Amanah Sakura Japan</span>',
+
+        ayok_role:
+        'インドネシア特定技能人材採用 マネージャー兼リーダー<br><span class="role-en">Manager & Leader, Tokutei Ginou Human Recruitment — Indonesia</span>',
+
+        hadi_role:
+        '日本語通訳・翻訳担当（日本語能力試験N1）<br><span class="role-en">Japanese Interpreter & Translator (JLPT N1)</span>',
+
+
+        vision_kicker:"ビジョン・ミッション",
+
+        vision_title:
+        "信頼される架け橋へ",
+
+        vision_text:
+        "質の高い教育、透明性のあるプロセス、そして長期的な関係を通じて、インドネシア人材と日本企業から信頼されるパートナーを目指します。",
+
+
+        values_kicker:"私たちの価値観",
+
+        values_title:
+        "大切にしている価値",
+
+        value1_title:"信頼",
+
+        value1_text:
+        "誠実で責任あるプロセスを通じて、信頼を守ります。",
+
+        value2_title:"プロフェッショナル",
+
+        value2_text:
+        "明確なコミュニケーションと専門的なサービスを提供します。",
+
+        value3_title:"誠実さ",
+
+        value3_text:
+        "すべてのプロセスにおいて正直さ、透明性、責任を大切にします。",
+
+        value4_title:"パートナーシップ",
+
+        value4_text:
+        "候補者と日本企業との長期的な関係を築きます。",
+
+
+        services_kicker:"サービス",
+
+        services_title:
+        "私たちのサービス",
+
+        services_description:
+        "インドネシア人材が日本で働くための総合的な教育・研修・採用支援を提供します。",
+
+        service1_title:
+        "日本語教育",
+
+        service1_text:
+        "日本で必要となるコミュニケーション能力と日本語試験に向けた教育を行います。",
+
+        service2_title:
+        "特定技能人材採用",
+
+        service2_text:
+        "インドネシア人候補者の選考から日本での就労までをサポートします。",
+
+        service3_title:
+        "技能実習・研修",
+
+        service3_text:
+        "日本での仕事と研修に向けて、候補者を体系的に準備します。",
+
+
+        process_kicker:"採用プロセス",
+
+        process_title:
+        "準備から日本へ",
+
+        process1_title:"教育",
+
+        process1_text:
+        "プログラムに必要な日本語教育と研修を行います。",
+
+        process2_title:"選考",
+
+        process2_text:
+        "書類、語学力、採用プロセスに基づいて候補者を選考します。",
+
+        process3_title:"準備",
+
+        process3_text:
+        "渡航前に必要な研修と書類準備を行います。",
+
+        process4_title:"日本",
+
+        process4_text:
+        "日本へ渡航し、新しいキャリアをスタートします。",
+
+
+        principle_title:
+        "信頼が未来をつくる",
+
+        principle_text:
+        "候補者、家族、パートナー、日本企業とのすべての関係において、信頼を大切にしています。",
+
+
+        contact_kicker:"お問い合わせ",
+
+        contact_title:
+        "お気軽にご相談ください",
+
+        contact_description:
+        "日本での仕事、日本語教育、企業との協力、人材採用についてお気軽にお問い合わせください。",
+
+        contact_item3_title:
+        "インドネシア — 日本",
+
+        contact_item3:
+        "人材・教育パートナーシップ",
+
+        contact_card_title:
+        "共に未来をつくりましょう",
+
+        contact_card_text:
+        "日本企業、教育機関、LPK、P3MIなど、人材育成に関するパートナーシップを歓迎しています。",
+
+        contact_button:
+        "WhatsAppでお問い合わせ",
+
+
+        footer_description:
+        "日本語教育、研修、そしてインドネシア人材の育成・採用支援。",
+
+        footer_navigation:
+        "NAVIGATION",
+
+        footer_company:
+        "COMPANY",
+
+        footer_right:
+        "All Rights Reserved."
+
+    },
+
+
+    en: {
+
+        nav_home:"Home",
+        nav_profile:"Profile",
+        nav_team:"Team",
+        nav_services:"Services",
+        nav_process:"Process",
+        nav_contact:"Contact",
+
+        hero_kicker:"Japan Human Resource Partner",
+
+        hero_description:
+        "Building a bridge between Indonesia and Japan through education, training, and professional human resource development.",
+
+        hero_button:"About Us",
+        hero_contact:"Contact Us",
+
+        hero_card_label:
+        "Trusted Human Resources",
+
+        hero_card_title:
+        "Connecting <span>Indonesia</span> to Japan",
+
+        hero_card_small:
+        "Education • Training • Recruitment",
+
+
+        profile_kicker:"Company Profile",
+
+        profile_title:
+        "About Amanah Sakura",
+
+        profile_description:
+        "PT Amanah Sakura Japan is a partner in developing Indonesian human resources for opportunities in Japan.",
+
+        profile_heading:
+        "Opening the Way to the Future",
+
+        profile_p1:
+        "PT Amanah Sakura Japan focuses on Japanese language education, training, candidate support, and recruitment of Indonesian human resources for work and career development in Japan.",
+
+        profile_p2:
+        "We prioritize transparent processes, clear communication, and responsible support from preparation through departure.",
+
+        profile_item1_title:"Focus",
+        profile_item1:"Japanese Education & Training",
+
+        profile_item2_title:"Recruitment",
+        profile_item2:"Tokutei Ginou & Internship",
+
+        profile_item3_title:"Support",
+        profile_item3:"Candidate Support",
+
+        profile_item4_title:"Japan",
+        profile_item4:"Connecting with Japanese Companies",
+
+
+        team_kicker:"Management Team",
+
+        team_title:
+        "Amanah Sakura Team",
+
+        team_description:
+        "A professional team committed to education, Japanese interpretation, translation, development, and recruitment of Indonesian human resources for Japan.",
+
+        koirul_role:
+        "Chief Executive Officer (CEO), PT Amanah Sakura Japan",
+
+        ayok_role:
+        "Manager & Leader, Tokutei Ginou Human Recruitment — Indonesia",
+
+        hadi_role:
+        "Japanese Interpreter & Translator (JLPT N1)",
+
+
+        vision_kicker:"Vision & Mission",
+
+        vision_title:
+        "Becoming a Trusted Bridge",
+
+        vision_text:
+        "We aim to become a trusted partner for Indonesian candidates and Japanese companies through quality education, transparent processes, and long-term relationships.",
+
+
+        values_kicker:"Our Values",
+
+        values_title:
+        "What We Stand For",
+
+        value1_title:"Trust",
+
+        value1_text:
+        "Protecting trust through honest and responsible processes.",
+
+        value2_title:"Professional",
+
+        value2_text:
+        "Providing professional services with clear communication.",
+
+        value3_title:"Integrity",
+
+        value3_text:
+        "Prioritizing honesty, transparency, and responsibility in every process.",
+
+        value4_title:"Partnership",
+
+        value4_text:
+        "Building long-term relationships with candidates and Japanese companies.",
+
+
+        services_kicker:"What We Do",
+
+        services_title:
+        "Our Services",
+
+        services_description:
+        "Integrated solutions to prepare Indonesian human resources for professional opportunities in Japan.",
+
+        service1_title:
+        "Japanese Language Education",
+
+        service1_text:
+        "Japanese language education to prepare candidates for communication requirements and Japanese language examinations.",
+
+        service2_title:
+        "Tokutei Ginou Recruitment",
+
+        service2_text:
+        "Selection and support for Indonesian candidates seeking Tokutei Ginou employment opportunities in Japan.",
+
+        service3_title:
+        "Internship Program",
+
+        service3_text:
+        "Structured preparation for candidates entering work and training programs in Japan.",
+
+
+        process_kicker:"Our Process",
+
+        process_title:
+        "From Preparation to Japan",
+
+        process1_title:"Education",
+
+        process1_text:
+        "Candidates receive Japanese language education and training according to program requirements.",
+
+        process2_title:"Selection",
+
+        process2_text:
+        "Candidates go through document screening, language assessment, and recruitment procedures.",
+
+        process3_title:"Preparation",
+
+        process3_text:
+        "Candidates receive final training and document preparation before departure.",
+
+        process4_title:"Japan",
+
+        process4_text:
+        "Candidates travel to Japan and begin their professional journey.",
+
+
+        principle_title:
+        "Trust Creates the Future",
+
+        principle_text:
+        "Trust is the foundation of every relationship we build with candidates, families, partners, and Japanese companies.",
+
+
+        contact_kicker:"Contact",
+
+        contact_title:
+        "Let's Connect",
+
+        contact_description:
+        "Contact us for Japanese employment information, Japanese language education, corporate partnerships, and recruitment needs.",
+
+        contact_item3_title:
+        "Indonesia — Japan",
+
+        contact_item3:
+        "Human Resource & Education Partnership",
+
+        contact_card_title:
+        "Let's Build the Future Together",
+
+        contact_card_text:
+        "We welcome partnerships with Japanese companies, educational institutions, LPKs, P3MIs, and other partners involved in human resource development.",
+
+        contact_button:
+        "Contact via WhatsApp",
+
+
+        footer_description:
+        "Education, training, and development of Indonesian human resources for Japan.",
+
+        footer_navigation:
+        "NAVIGATION",
+
+        footer_company:
+        "COMPANY",
+
+        footer_right:
+        "All Rights Reserved."
+
+    }
+
+};
+
+
+/* =========================================================
+   LANGUAGE FUNCTION
+========================================================= */
+
+function setLanguage(lang){
+
+    if(!translations[lang]){
+        lang="id";
+    }
+
+    document.documentElement.lang =
+        lang === "jp" ? "ja" : lang;
+
+    document.body.classList.toggle(
+        "lang-jp",
+        lang === "jp"
+    );
+
+
+    const elements =
+        document.querySelectorAll(
+            "[data-i18n]"
+        );
+
+
+    elements.forEach(function(element){
+
+        const key =
+            element.getAttribute(
+                "data-i18n"
+            );
+
+        if(
+            translations[lang] &&
+            translations[lang][key] !== undefined
+        ){
+
+            element.innerHTML =
+                translations[lang][key];
+
+        }
+
+    });
+
+
+    document
+        .querySelectorAll(".lang-btn")
+        .forEach(function(button){
+
+            button.classList.toggle(
+                "active",
+                button.dataset.lang === lang
+            );
+
+        });
+
+
+    try{
+
+        localStorage.setItem(
+            "amanahLanguage",
+            lang
+        );
+
+    }catch(error){}
+
+}
+
+
+/* =========================================================
+   LANGUAGE BUTTON
+========================================================= */
+
+document
+    .querySelectorAll(".lang-btn")
+    .forEach(function(button){
+
+        button.addEventListener(
+            "click",
+            function(){
+
+                setLanguage(
+                    this.dataset.lang
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   LOAD SAVED LANGUAGE
+========================================================= */
+
+let savedLanguage="id";
+
+try{
+
+    savedLanguage =
+        localStorage.getItem(
+            "amanahLanguage"
+        ) || "id";
+
+}catch(error){}
+
+setLanguage(savedLanguage);
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const mobileToggle =
+    document.getElementById(
+        "mobileToggle"
+    );
+
+const navMenu =
+    document.getElementById(
+        "navMenu"
+    );
+
+
+mobileToggle.addEventListener(
+    "click",
+    function(){
+
+        navMenu.classList.toggle(
+            "open"
+        );
+
+    }
+);
+
+
+/* Close menu after click */
+
+navMenu
+    .querySelectorAll("a")
+    .forEach(function(link){
+
+        link.addEventListener(
+            "click",
+            function(){
+
+                navMenu.classList.remove(
+                    "open"
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   SCROLL PROGRESS
+========================================================= */
+
+const scrollProgress =
+    document.getElementById(
+        "scrollProgress"
+    );
+
+
+window.addEventListener(
+    "scroll",
+    function(){
+
+        const scrollTop =
+            window.scrollY;
+
+        const documentHeight =
+            document.documentElement
+                .scrollHeight -
+            window.innerHeight;
+
+        const progress =
+            documentHeight > 0
+                ? (scrollTop / documentHeight) * 100
+                : 0;
+
+        scrollProgress.style.width =
+            progress + "%";
+
+    },
+    {passive:true}
+);
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+const backTop =
+    document.getElementById(
+        "backTop"
+    );
+
+
+window.addEventListener(
+    "scroll",
+    function(){
+
+        if(window.scrollY > 500){
+
+            backTop.classList.add(
+                "show"
+            );
+
+        }else{
+
+            backTop.classList.remove(
+                "show"
+            );
+
+        }
+
+    },
+    {passive:true}
+);
+
+
+backTop.addEventListener(
+    "click",
+    function(){
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    }
+);
+
+
+/* =========================================================
+   REVEAL ANIMATION
+========================================================= */
+
+const revealElements =
+    document.querySelectorAll(
+        ".reveal"
+    );
+
+
+if(
+    "IntersectionObserver"
+    in window
+){
+
+    const revealObserver =
+        new IntersectionObserver(
+            function(entries){
+
+                entries.forEach(
+                    function(entry){
+
+                        if(
+                            entry.isIntersecting
+                        ){
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+                            revealObserver.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold:0.12
+            }
+        );
+
+
+    revealElements.forEach(
+        function(element){
+
+            revealObserver.observe(
+                element
+            );
+
+        }
+    );
+
+
+}else{
+
+    revealElements.forEach(
+        function(element){
+
+            element.classList.add(
+                "visible"
+            );
+
+        }
+    );
+
+}
+
+</script>
+
+</body>
+</html>
